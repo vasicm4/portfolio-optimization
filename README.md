@@ -5,7 +5,8 @@ GAPortfolioOptimization is a financial engineering tool built in C++ that levera
 ## Why use a Genetic Algorithm?
 Traditional optimization (like Mean-Variance Optimization) can get stuck in "local optima" or fail when faced with complex constraints. This tool uses evolutionary heuristics—Crossover, Mutation, and Selection—to navigate the search space and find the most efficient allocation of assets.
 
-The primary objective is to maximize the Sharpe Ratio ($S$), defined as:$$S = \frac{R_p - R_f}{\sigma_p}$$
-Where:$R_p$: Expected portfolio return
-$R_f$: Risk-free rate of return
-$\sigma_p$: Standard deviation of portfolio excess return (volatility)
+## Key features
+Sharpe Ratio Maximization: Optimizes for the highest expected return per unit of volatility.
+Evolutionary Engine: Uses custom selection and mutation logic to prevent premature convergence.
+Dynamic Constraints: Easily handle "long-only" constraints or specific sector weightings.
+Visualization: Generates the Efficient Frontier to visualize the tradeoff between risk and return.
